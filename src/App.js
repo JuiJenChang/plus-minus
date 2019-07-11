@@ -5,15 +5,14 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      num: 0,
-    }
+    this.state = ({num : 0})
+
     this.plusNum = this.plusNum.bind(this);
     this.minusNum = this.minusNum.bind(this);
   }
 
   plusNum() {
-    const numPlus = this.state.num++
+    const numPlus = this.state.num+1
     this.setState({
       num: numPlus,
     })
@@ -21,7 +20,7 @@ class App extends Component {
   }
 
   minusNum() {
-    const numMinus = this.state.num--
+    const numMinus = this.state.num-1
     this.setState({
       num: numMinus,
     })
