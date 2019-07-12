@@ -5,7 +5,7 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = ({num : 0})
+    this.state = {num : 0}
 
     this.plusNum = this.plusNum.bind(this);
     this.minusNum = this.minusNum.bind(this);
